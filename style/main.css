@@ -1,0 +1,94 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .box_father{
+    width: 40%;
+    height: 80%;
+    background-color: aqua;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 37.7px;
+}
+
+.container .box_father div{
+    width: 200px;
+    height: 100px;
+    /* background-color: brown;  */
+    border: 1px solid black;
+}
+
+/* .container .box_father div:first-child{
+    background-color: yellow;
+}
+.container .box_father div:last-child{
+    background-color: yellow;
+} */
+/* .container .box_father div:nth-child(even){
+    background-color: yellow;
+} */
+
+/* .container .box_father div:nth-child(3):active{
+    background-color: yellow;
+} */
+
+/* .container .box_father input:checked + .box1{
+    background-color: blue;
+} */
+
+/* .container .box_father input:focus{
+    background-color: chartreuse;
+} */
+
+.container .box_father div:nth-child(6):hover{
+    /* background-color: black; */
+    background-image: url("https://avatars.mds.yandex.net/i?id=4cbf65ae158873652b543347dbcbece0-5446078-images-thumbs&n=13");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container .box_father div {
+    position: relative;
+}
+
+/* .container .box_father div:nth-child(1)::after{
+    content: "Salom";
+    width: 100px;
+    height: 50px;
+    display: block;
+    background-color: red;
+    position: absolute;
+    top: -50px;
+    left: -100px;
+} */
+.container .box_father div:nth-child(1)::before{
+    content: "Salom";
+    width: 100px;
+    height: 50px;
+    display: block;
+    background-color: red;
+    /* position: absolute;
+    top: -50px;
+    left: -100px; */
+}
+
+p::before{
+    content: "";
+    display: block;
+    width: 5px;
+    height: 5px ;
+    border-radius: 5px;
+    background-color: blueviolet;
+}
+p::after{
+    content: "";
+    display: block;
+    width: 5px;
+    height: 5px ;
+    border-radius: 5px;
+    background-color: blueviolet;
+}
